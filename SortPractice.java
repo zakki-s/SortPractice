@@ -95,15 +95,14 @@ public class SortPractice {
 			printWriter.close();
 			System.out.println("---CSV Output Done---");
 		} catch (IOException e) {
-	        System.out.println(e);
-	    }
+			System.out.println(e);
+		}
 	}
 	// メソッドを分ける
 	public static void main(String[] args) throws FileNotFoundException {
 
-    	//=E6=99=82=E9=96=93=E8=A8=88=E6=B8=AC=E9=96=8B=E5=A7=8B
-    	long start = System.currentTimeMillis();
-    	System.out.println("---START---");
+		long start = System.currentTimeMillis();
+		System.out.println("---START---");
 
 		// 相対パスに変更
 		//String fileInput = "test01.csv";
@@ -119,10 +118,9 @@ public class SortPractice {
 
 		writer(fileIn, fileOut);
 
-	    System.out.println("---END---");
-        //=E6=99=82=E9=96=93=E8=A8=88=E6=B8=AC=E7=B5=82=E4=BA=86
-    	long end = System.currentTimeMillis();
-    	System.out.println("TIME:" + (end - start)  + "ms");
+		System.out.println("---END---");
+
+		long end = System.currentTimeMillis();
+		System.out.println("TIME:" + (end - start)  + "ms");
 	}
-	//=E5=BE=8C=E3=80=85=E9=96=A2=E6=95=B0=E3=81=AF=E6=8A=BD=E5=87=BA
 }
